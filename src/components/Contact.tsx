@@ -44,7 +44,7 @@ const Contact = () => {
     { icon: Github, href: 'https://github.com', label: 'GitHub' },
     { icon: Linkedin, href: 'https://linkedin.com', label: 'LinkedIn' },
     { icon: Twitter, href: 'https://twitter.com', label: 'Twitter' },
-    { icon: Mail, href: 'mailto:palav.veeresh@gmail.com', label: 'Email' }
+    { icon: Mail, href: 'mailto:veereshhindiholi@8337gmail.com', label: 'Email' }
   ];
 
   return (
@@ -133,16 +133,25 @@ const Contact = () => {
                 <div className="flex items-center">
                   <Mail size={18} className="text-cyberpunk-green mr-3" />
                   <a 
-                    href="mailto:palav.veeresh@gmail.com" 
+                    href="mailto:veereshhindiholi@8337gmail.com" 
                     className="text-white/80 hover:text-cyberpunk-green transition-colors"
                   >
-                    palav.veeresh@gmail.com
+                    veereshhindiholi@8337gmail.com
                   </a>
                 </div>
                 <div className="flex items-center">
                   <Phone size={18} className="text-cyberpunk-green mr-3" />
                   <a 
-                    href="https://wa.me/1234567890" 
+                    href="tel:7483460029" 
+                    className="text-white/80 hover:text-cyberpunk-green transition-colors"
+                  >
+                    +91 7483460029
+                  </a>
+                </div>
+                <div className="flex items-center">
+                  <Phone size={18} className="text-cyberpunk-green mr-3" />
+                  <a 
+                    href="https://wa.me/917483460029" 
                     target="_blank" 
                     rel="noopener noreferrer" 
                     className="text-white/80 hover:text-cyberpunk-green transition-colors flex items-center"
