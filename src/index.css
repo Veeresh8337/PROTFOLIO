@@ -98,6 +98,57 @@
     transform: translateX(2px);
     animation: glitch-anim 1s infinite linear alternate-reverse;
   }
+
+  /* Trading-style animation */
+  .ticker-slide {
+    animation: ticker-slide 20s linear infinite;
+  }
+
+  .typing-animation {
+    overflow: hidden;
+    border-right: 0.15em solid #0CFF0C;
+    white-space: nowrap;
+    margin: 0;
+    animation: typing 3.5s steps(30, end), blink-caret 0.75s step-end infinite;
+  }
+
+  /* Blur glow animation */
+  .blur-glow {
+    animation: blur-glow 3s ease-in-out infinite alternate;
+  }
+  
+  @keyframes gradient-slide {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+
+  @keyframes gradient-slide-vertical {
+    0% { background-position: 50% 0%; }
+    50% { background-position: 50% 100%; }
+    100% { background-position: 50% 0%; }
+  }
+  
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: #0CFF0C }
+  }
+  
+  @keyframes ticker-slide {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-100%); }
+  }
+  
+  @keyframes blur-glow {
+    0% { filter: blur(5px) brightness(0.8); }
+    50% { filter: blur(8px) brightness(1.2); }
+    100% { filter: blur(5px) brightness(0.8); }
+  }
   
   @keyframes glitch-anim {
     0% {
@@ -156,6 +207,23 @@
   
   .custom-cursor {
     cursor: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%2300FF41' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cline x1='5' y1='12' x2='19' y2='12'%3E%3C/line%3E%3Cpolyline points='12 5 19 12 12 19'%3E%3C/polyline%3E%3C/svg%3E"), pointer;
+  }
+
+  /* Trading-style stock ticker */
+  .stock-ticker {
+    @apply bg-cyberpunk-darker/80 py-1 border-y border-cyberpunk-green/20 overflow-hidden whitespace-nowrap;
+  }
+
+  .ticker-item {
+    @apply inline-flex items-center mx-4 text-xs text-white/70;
+  }
+
+  .ticker-item.up {
+    @apply text-green-400;
+  }
+
+  .ticker-item.down {
+    @apply text-red-400;
   }
 }
 
