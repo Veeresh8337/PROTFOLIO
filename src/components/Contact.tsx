@@ -85,16 +85,16 @@ const Contact = () => {
   }, []);
 
   const socialLinks = [
-    { icon: Github, href: "https://github.com", label: "GitHub" },
+    { icon: Github, href: "https://github.com/Veeresh8337", label: "GitHub" },
     {
       icon: Linkedin,
       href: "https://www.linkedin.com/in/veeresh-hindiholi-403452374/",
       label: "LinkedIn",
     },
-    { icon: Twitter, href: "https://twitter.com", label: "Twitter" },
+    { icon: Twitter, href: "https://x.com/Veeresh8337", label: "Twitter" },
     {
       icon: Mail,
-      href: "mailto:veereshhindiholi@8337gmail.com",
+      href: "mailto:veereshhindiholi8337@gmail.com",
       label: "Email",
     },
   ];
@@ -278,10 +278,10 @@ const Contact = () => {
                     <Mail size={16} className="text-cyberpunk-green" />
                   </div>
                   <a
-                    href="mailto:veereshhindiholi@8337gmail.com"
+                    href="mailto:veereshhindiholi8337@gmail.com"
                     className="text-white/80 hover:text-cyberpunk-green transition-colors"
                   >
-                    veereshhindiholi@8337gmail.com
+                    veereshhindiholi8337@gmail.com
                   </a>
                 </div>
                 <div className="flex items-center group">

@@ -139,13 +139,16 @@ const Achievements = () => {
                       {achievement.icon && (
                         <achievement.icon
                           className={cn(
-                            "text-cyberpunk-green transition-all duration-500 group-hover:animate-bounce group-focus:animate-bounce",
+                            "text-cyberpunk-green drop-shadow-lg transition-all duration-500 group-hover:animate-bounce group-focus:animate-bounce",
+                            index === 0
+                              ? "text-4xl sm:text-5xl md:text-6xl mx-auto block"
+                              : "",
                             isLeft ? "ml-auto" : ""
                           )}
-                          size={22}
+                          size={index === 0 ? 44 : 22}
                           tabIndex={0}
-                          title="Achievement Icon"
-                          aria-label="Achievement Icon"
+                          title="Hero Achievement Icon"
+                          aria-label="Hero Achievement Icon"
                         />
                       )}
                       {achievement.emoji && (
