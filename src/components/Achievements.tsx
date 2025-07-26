@@ -14,10 +14,16 @@ interface Achievement {
 const Achievements = () => {
   const achievements: Achievement[] = [
     {
+      title: "TechNova IT Event – Coding (2nd Place)",
+      image: "/images/veeresh6.jpg",
+      description:
+        "Secured 2nd place in Coding at TechNova IT Event (28-29 March 2025), hosted by KLE Society's College of BCA RLSI (Autonomous), Belagavi. Represented the college as part of a high-performing team (Tej Hagargi & Veeresh Hindiholi) and contributed to the General Championship and multiple podium finishes across events.",
+    },
+    {
       title: "Esperanza 2.0 Coding Event – 1st Place Winner",
       image: "/images/veeresh1.jpg",
       description:
-        "Achieved 1st place at Esperanza 2.0, hosted by KLE BCA Mahalingpur. This milestone highlights my drive for innovation, technical mastery, and a passion for building impactful solutions.",
+        "Awarded 1st place in Coding at Esperanza 2.0, hosted by KLE BCA Mahalingpur. Demonstrated advanced problem-solving skills and technical expertise in a competitive environment.",
     },
     {
       title: "Colossus 2024 Coding Event – Champion",
@@ -120,8 +126,10 @@ const Achievements = () => {
                         className={cn(
                           "w-full max-w-xs mx-auto mb-3 rounded shadow-lg border border-cyberpunk-green/30 group-hover:scale-105 group-hover:shadow-cyberpunk-green/30 transition-transform duration-500",
                           "sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl",
-                          achievement.image === "/images/veeresh1.jpg"
-                            ? "h-40 object-cover object-top"
+                          achievement.image === "/images/veeresh6.jpg"
+                            ? "h-40 object-cover object-center"
+                            : achievement.image === "/images/veeresh1.jpg"
+                            ? "h-40 object-cover object-center"
                             : ""
                         )}
                         tabIndex={0}

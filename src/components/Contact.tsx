@@ -47,10 +47,10 @@ const Contact = () => {
     e.preventDefault();
     setIsSubmitting(true);
 
-    // Replace these with your actual EmailJS service, template, and user IDs
-    const SERVICE_ID = "your_service_id";
-    const TEMPLATE_ID = "your_template_id";
-    const USER_ID = "your_user_id";
+    // EmailJS configuration
+    const SERVICE_ID = "service_4k1ypck";
+    const TEMPLATE_ID = "template_5fqe7g5";
+    const USER_ID = "9ObFZfbQR2fMjzkUG";
 
     emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, formRef.current!, USER_ID).then(
       (result) => {
@@ -86,7 +86,7 @@ const Contact = () => {
 
   const socialLinks = [
     { icon: Github, href: "https://github.com", label: "GitHub" },
-    { icon: Linkedin, href: "https://linkedin.com", label: "LinkedIn" },
+    { icon: Linkedin, href: "https://www.linkedin.com/in/veeresh-hindiholi-403452374/", label: "LinkedIn" },
     { icon: Twitter, href: "https://twitter.com", label: "Twitter" },
     {
       icon: Mail,

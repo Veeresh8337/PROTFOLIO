@@ -109,7 +109,9 @@ const About = () => {
                 className="terminal-text text-sm mb-4"
               ></div>
               {/* Skills Heading for clarity and professionalism */}
-              <h3 className="text-lg font-semibold text-cyberpunk-green mb-2 mt-4">Skills</h3>
+              <h3 className="text-lg font-semibold text-cyberpunk-green mb-2 mt-4">
+                Skills
+              </h3>
               <div className="flex flex-wrap gap-2" aria-label="Skills List">
                 {skills.map((skill, index) => (
                   <div
